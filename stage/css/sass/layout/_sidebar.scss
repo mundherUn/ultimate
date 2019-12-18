@@ -8,5 +8,8 @@
         transition: 0.3s;
         background-color: #ccc;
         height: 100%;
+        &.no-sidebar {
+            left: -250px;
+        }
     }
 }

@@ -5,15 +5,20 @@
 
 body {
     height: 3000px;
+    padding: 0;
+    margin: 0;
 }
 
 .page {
     min-width: 100vh;
     .container-aera {
-        width: 81.5%;
+        width: 81%;
         min-height: 100%;
         transition: 0.3s;
         will-change: width;
         float: right;
+        &.no-sidebar {
+            width: 100%;
+        }
     }
 }

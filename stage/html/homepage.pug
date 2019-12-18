@@ -7,9 +7,13 @@ html(lang="en")
     meta(http-equiv="X-UA-Compatible",content="ie=edge")
     title HomePage
     link(rel="stylesheet" href="css/main.css")
+    //- include pug/layout/style
 
   body
     .page.home-page
-      include pug/layout/sidebar.pug 
-      .container-aera 
-        h1 HomePage
+      include pug/layout/sidebar
+      .container-aera
+        include pug/layout/header
+        .content
+          h1 HomePage
+  include pug/layout/scripts
