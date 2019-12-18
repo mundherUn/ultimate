@@ -1,0 +1,19 @@
+// this are All the Elements Globale
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 3000px;
+}
+
+.page {
+    min-width: 100vh;
+    .container-aera {
+        width: 81.5%;
+        min-height: 100%;
+        transition: 0.3s;
+        will-change: width;
+        float: right;
+    }
+}
