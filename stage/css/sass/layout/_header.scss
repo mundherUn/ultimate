@@ -1,7 +1,26 @@
 .header {
     background-color: #fff;
-    padding: 15px;
+    padding: 17px;
     .toggle-sidebar {
         cursor: pointer;
+    }
+    .notificatins {
+        display: inline-block;
+        margin-left: 20px;
+        cursor: pointer;
+        .dropdown-menu {
+            padding: 15px;
+            min-width: 200px;
+            border: none;
+            &::before {
+                content: "";
+                position: absolute;
+                top: -10px;
+                left: 0px;
+                border-width: 10px;
+                border-color: transparent transparent #999 transparent;
+                border-style: solid;
+            }
+        }
     }
 }
