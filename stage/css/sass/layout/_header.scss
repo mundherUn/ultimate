@@ -9,17 +9,64 @@
         margin-left: 20px;
         cursor: pointer;
         .dropdown-menu {
-            padding: 15px;
-            min-width: 200px;
+            min-width: 300px;
             border: none;
+            top: 3px !important;
             &::before {
                 content: "";
                 position: absolute;
-                top: -10px;
+                top: -12px;
                 left: 0px;
                 border-width: 10px;
-                border-color: transparent transparent #999 transparent;
+                border-color: transparent transparent #292c33 transparent;
                 border-style: solid;
+            }
+            .noti-head {
+                background-color: #292c33;
+                color: #fff;
+                padding: 10px;
+                span {
+                    float: right;
+                }
+            }
+            .noti-content {
+                padding: 10px;
+                ul {
+                    .person {
+                        width: 55px;
+                        height: 55px;
+                        background-color: #292c33;
+                        border-radius: 50%;
+                        position: relative;
+                        margin-bottom: 8px;
+                        h4 {
+                            text-transform: capitalize;
+                            font-size: 17px;
+                        }
+                        h4,
+                        .person-pra {
+                            position: absolute;
+                            left: 65px;
+                            top: 7px;
+                            width: 150px;
+                        }
+                        .person-pra {
+                            position: absolute;
+                            left: 65px;
+                            top: 28px;
+                            width: 250px;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+            .noti-foot {
+                a {
+                    display: block;
+                    padding: 10px;
+                    border-top: 1px solid #292c33;
+                    text-decoration: none;
+                }
             }
         }
     }

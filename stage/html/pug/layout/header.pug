@@ -3,4 +3,18 @@
   .dropdown.notificatins
     i.fa.fa-bell.fa-lg#notfication( data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
     .dropdown-menu(aria-labelledby='notfication')
-      | notification
+      .noti-head
+        | Notification
+        span 50
+      .noti-content
+        ul.list-unstyled
+          li.person
+            h4 monther saeed
+            p.person-pra this is notification for you
+          li.person
+            h4 monther saeed
+            p.person-pra this is notification for you
+          li.person
+            h4 monther saeed
+            p.person-pra this is notification for you
+      .noti-foot.text-center: a(href="#") Show All Notification
