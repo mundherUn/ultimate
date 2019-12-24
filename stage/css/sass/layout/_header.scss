@@ -75,4 +75,77 @@
             }
         }
     }
+    .usermenu-container {
+        float: right;
+        position: relative;
+        top: -9px;
+        .usermenu {
+            cursor: pointer;
+            .avtar {
+                width: 40px;
+                height: 40px;
+                background-color: #292c33;
+            }
+            .user {
+                font-size: 15px;
+                margin-right: 10px;
+                margin-left: 10px;
+                color: #777;
+            }
+        }
+        .dropdown-menu {
+            min-width: 500px;
+            border: none;
+            top: 5px !important;
+            padding: 12px;
+            border: 1px solid #292c33;
+            border-radius: 0 !important;
+            &::before {
+                content: "";
+                position: absolute;
+                top: -21px;
+                right: 10px;
+                border-width: 10px;
+                border-color: transparent transparent #292c33 transparent;
+                border-style: solid;
+            }
+            .user-info {
+                h3 {
+                    font-weight: bold;
+                    font-size: 22px;
+                }
+                p {
+                    color: #999;
+                }
+            }
+            .activites {
+                li {
+                    padding: 8px;
+                }
+            }
+            .user-links {
+                .links-box {
+                    border: 1px solid #292c33;
+                    padding: 10px;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    text-align: right;
+                    i {
+                        float: left;
+                        position: relative;
+                        top: 5px;
+                        &.fa-gear {
+                            color: #3493db;
+                        }
+                        &.fa-user {
+                            color: #c0392b;
+                        }
+                        &.fa-power-off {
+                            color: #e74c3c;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
