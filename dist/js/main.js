@@ -20,6 +20,10 @@ $(function() {
             closeScreen();
         }
     });
+    //Hide Setting
+    $(".toggle-setting").on("click", function() {
+        $(".setting-box").toggleClass("hide-setting");
+    });
 });
 
 var elm = document.documentElement;
