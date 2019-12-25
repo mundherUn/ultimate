@@ -1,0 +1,9 @@
+$themes: ( green-them: ( color: #27ae60), blue-them: ( color: #2980b9), red-them: ( color: #c0392b));
+@each $theme,
+$map in $themes {
+    .#{$theme} {
+        .classname {
+            color: map-get($map, color);
+        }
+    }
+}
