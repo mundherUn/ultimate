@@ -25,4 +25,13 @@
     .setting-content {
         color: red;
     }
+    .color-options {
+        ul {
+            $colors: #27ae60, #2980b9, #c0392b;
+            @for $i from 1 to length($colors) {
+                li: nth-childe(#{$i});
+                background-color: nth($colors, $i);
+            }
+        }
+    }
 }

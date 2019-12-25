@@ -1,8 +1,12 @@
 .setting-box.hide-setting
   i.fa.fa-gear.fa-lg.toggle-setting
   .setting-content
-    .option
-      h4 color naame
+    .option.color-options
+      h4 color option
+      - var thems=["green-them","blue-them","red-them"]
+      ul.list-unstyled
+        each them in thems
+          li(data-them=them)
     .option
       h4 color name
     .option
