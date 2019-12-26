@@ -24,6 +24,20 @@ $(function() {
     $(".toggle-setting").on("click", function() {
         $(".setting-box").toggleClass("hide-setting");
     });
+    // Switch Colors Themes
+    var themsClasses = [];
+    $(".color-options li").each(function() {
+        themsClasses.push($(this).data("them"));
+    });
+    $(".color-options li").on("click", function() {
+        $(this)
+            .addClass("active")
+            .siblings()
+            .removeClass("active");
+        $("body")
+            .removeClass(themsClasses.join(" "))
+            .addClass($(this).data("them"));
+    });
 });
 
 var elm = document.documentElement;
