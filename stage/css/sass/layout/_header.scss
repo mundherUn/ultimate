@@ -3,6 +3,9 @@
     padding: 17px;
     .toggle-sidebar {
         cursor: pointer;
+        &:hover {
+            color: green;
+        }
     }
     .header-icon {
         display: inline-block;
