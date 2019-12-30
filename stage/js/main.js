@@ -38,6 +38,20 @@ $(function() {
             .removeClass(themsClasses.join(" "))
             .addClass($(this).data("them"));
     });
+    // Switch Fonts
+    var fontsClasses = [];
+    $(".font-option select option").each(function() {
+        fontsClasses.push($(this).val());
+    });
+    $(".font-option select").on("change", function() {
+        $("body")
+            .removeClass(fontsClasses.join(" "))
+            .addClass(
+                $(this)
+                .find("option:selected")
+                .val()
+            );
+    });
 });
 
 var elm = document.documentElement;

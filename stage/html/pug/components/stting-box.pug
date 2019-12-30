@@ -7,7 +7,11 @@
       ul.list-unstyled
         each them in thems
           li(data-them=them)
-    .option
-      h4.option-title color name
+    .option.font-option
+      h4.option-title Chose Font
+        - var fonts=["Open","Montserrat","Roboto"]
+      select.form-control
+        each font in fonts
+          option(value=font)=font +"Font"
     .option
       h4.option-title color name
